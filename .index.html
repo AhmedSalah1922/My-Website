@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mahmoud Salah CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #6a11cb;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        }
+
+        header .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: -60px auto 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        header .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        header .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ffd700;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #6a11cb;
+            border-bottom: 3px solid #2575fc;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation on Scroll */
+        [data-aos] {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        [data-aos].aos-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="E:\12121233.png" alt="Ahmed Mahmoud Salah" class="profile-pic"> <!-- Replace with your profile picture -->
+        <h1>Ahmed Mahmoud Salah</h1>
+        <p>Credit and Collection Specialist | Giza, Egypt</p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/ahmed-salah1919" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:mido.salah8787@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <section data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>Dedicated Credit and Collection Specialist with expertise in managing accounts, ensuring timely payments, and minimizing financial risks.</p>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Commerce</strong> - Major Financial Accounting, Cairo University (Graduation Year: 2022, Grade: Good)</li>
+                <li><strong>General Certificate of Secondary Education</strong></li>
+            </ul>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Work Experience and Internships</h2>
+            <ul>
+                <li><strong>Enterprise Credit Management and Collection</strong> - Telecom Egypt (Jan 2023 – Current)</li>
+                <li><strong>Freelancer</strong> - Data Entry and Graphic Designer (2016 – Dec 2022)</li>
+                <li><strong>Call Centre Agent</strong> - Etisal International Company (Sep 2022 – Dec 2022)</li>
+                <li><strong>Internship</strong> - Banque Misr (2022)</li>
+                <li><strong>Football Administrator</strong> - FC Academy (Aug 2021 – Dec 2021)</li>
+            </ul>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Skills</h2>
+            <ul>
+                <li>ERP Oracle EBS</li>
+                <li>Power BI</li>
+                <li>MySQL</li>
+                <li>Microsoft Excel (Pivot Tables, VLOOKUP, Charts, Power Query)</li>
+                <li>Adobe Photoshop, After Effects, InDesign</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ahmed Mahmoud Salah. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Simple AOS (Animation on Scroll) Implementation
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-in');
+                }
+            });
+        });
+
+        document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
